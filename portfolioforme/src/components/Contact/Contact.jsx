@@ -2,12 +2,10 @@ import React from 'react';
 import './Contact.scss';
 
 const Contact = () => {
- 
-
   return (
-    <div className="Contact">
-Contact
-    </div>
+    <section id="contact" className="contact-section">
+      <h2>Contact Me</h2>
+    </section>
   );
 };
 

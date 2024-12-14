@@ -2,12 +2,10 @@ import React from 'react';
 import './Portfolio.scss';
 
 const Portfolio = () => {
- 
-
   return (
-    <div className="Portfolio">
-Portfolio
-    </div>
+    <section id="portfolio" className="portfolio-section">
+      <h2>My Portfolio</h2>
+    </section>
   );
 };
 

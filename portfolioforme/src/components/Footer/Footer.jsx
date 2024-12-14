@@ -2,12 +2,10 @@ import React from 'react';
 import './Footer.scss';
 
 const Footer = () => {
- 
-
   return (
-    <div className="Footer">
-Footer
-    </div>
+    <footer className="footer-section">
+      <p>My Portfolio</p>
+    </footer>
   );
 };
 

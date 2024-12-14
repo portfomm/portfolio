@@ -8,12 +8,18 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+        <div className='mainLogo'>
+            <h1>Milan Malishka</h1>
+        </div>
       <ul>
         <li onClick={() => handleScroll('hero')}>Home</li>
         <li onClick={() => handleScroll('about')}>About</li>
         <li onClick={() => handleScroll('portfolio')}>Portfolio</li>
         <li onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
+    <div className="controller_Section">
+        <button>Contact us</button>
+    </div>
     </nav>
   );
 };

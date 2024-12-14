@@ -2,12 +2,10 @@ import React from 'react';
 import './About.scss';
 
 const About = () => {
- 
-
   return (
-    <div className="about">
-About Us
-    </div>
+    <section id="about" className="about-section">
+      <h2>About Me</h2>
+    </section>
   );
 };
 
