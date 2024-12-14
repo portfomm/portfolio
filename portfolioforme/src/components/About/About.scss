@@ -1,0 +1,164 @@
+#about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
+    margin: 40px 0;
+
+    .about_me {
+
+        width: 50%;
+    }
+
+    .name_wrapper {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+
+        .occ {
+            font-size: 1rem;
+            color: #888888;
+        }
+
+        h1 {
+            margin: 8px 0;
+            font-size: 2.4em;
+            color: #ffffff;
+        }
+
+        .download-cv {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 20%;
+            bottom: 0;
+
+            .download-btn {
+                border: none;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                position: relative;
+                z-index: 4;
+                background-color: #B21EB2;
+                color: #ffffff;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            .download-btn::before,
+            .download-btn::after {
+                content: ' ';
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                position: absolute;
+                opacity: 0.7;
+                animation: splashGrow 2s ease-in-out infinite;
+            }
+
+            .download-btn::before {
+                width: 120px;
+                height: 120px;
+                background-color: #b21eb2c1;
+                animation-delay: 0s;
+            }
+
+            .download-btn::after {
+                width: 140px;
+                height: 140px;
+                background-color: #b21eb29e;
+                animation-delay: 0.2s;
+            }
+        }
+
+        @keyframes splashGrow {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+
+    }
+}
+
+.desc {
+    max-width: 350px;
+    font-size: 0.9rem;
+    color: #888888;
+    line-height: 1.8;
+}
+
+.its-me {
+    width: 40%;
+    height: 100%;
+    background-image: url("../../assets/Images/globe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    img {
+        width: 100%;
+    }
+}
+
+.social-media {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    ul {
+        list-style: none;
+
+        li {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.about-me-dec {
+    position: relative;
+    padding-left: 16px;
+}
+
+.about-me-dec::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #888888;
+    left: 0;
+}
