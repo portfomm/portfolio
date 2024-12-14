@@ -1,9 +1,8 @@
-#about {
+#hero {
     width: 100%;
     height: 80vh;
     display: flex;
     align-items: center;
-    flex-flow: row-reverse;
     margin: 40px 0;
 
     .about_me {
@@ -114,10 +113,6 @@
 .its-me {
     width: 40%;
     height: 100%;
-    background-image: url("../../assets/Images/globe.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 
     img {
         width: 100%;

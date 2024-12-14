@@ -6,35 +6,16 @@ import Xicon from '../../assets/icons/twitter';
 
 const About = () => {
   return (
-    <section id="about" className="hero-section">
-    <div className='about_me'>
-      <div className='name_wrapper'>
-        <span className='occ'>FULL-STACK DEVELOPER</span>
-        <h1>MILAN MALISHKA</h1>
-        <div className='download-cv'>
-          <button className='download-btn'>CV</button>
-        </div>
-      </div>
+    <section id="about" className="desc">
+      <h1 className='about-me-dec'>About Me</h1>
       <div className='desc'>
-        <p className='about-me-dec'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus mollitia, ab atque corrupti omnis cupiditate cum commodi voluptatum ducimus porro quaerat quo autem.</p>
-      </div>
-    </div>
-    <div className='its-me'>
-      {/* <img src={itsMe} alt='milan malishka' /> */}
-    </div>
-    <div className='social-media'>
-      <ul>
-        <li><a href='#'><FaceBookIcon size={32} color={"#000000"}/></a></li>
-        <li><a href='#'>
-          <Instagram size={32} color={"#000000"}/>
-          </a></li>
-        <li><a href='#'>
-          <Xicon size={32}  color={"#000000"} />
-          </a></li>
-
-      </ul>
-    </div>
-  </section>
+          <p className='about-me-dec'>I have more than 3 years of experience in Software Engineering field. I’m an enthusiastic and ambitious person
+who passionate of learning new technologies while taking up new challenges. As being a good team player and
+quick learner. I’m willing to serve for an organization allowing me to learn, develop my skills, utilize my
+knowledge and experience through working with a team to pursue common goals deliver the best results to the
+organization and society while advancing my career.</p>
+        </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <div className='mainLogo'>
-            <h1>Milan Malishka</h1>
+            <h1>Milan Malshika</h1>
         </div>
       <ul>
         <li onClick={() => handleScroll('hero')}>Home</li>
