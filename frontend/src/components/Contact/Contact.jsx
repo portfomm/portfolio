@@ -23,18 +23,17 @@ const Contact = () => {
         href="mailto:milanmalshika22@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="custom-button"
+        className="custom-button  gmail_link"
       >
         <GmailIcon size={30}  color={"#000000"} />
         Email Me
       </a>
 
-      {/* LinkedIn Button */}
       <a
         href="https://www.linkedin.com/in/milan-malshika-12a9861a1/"
         target="_blank"
         rel="noopener noreferrer"
-        className="custom-button"
+        className="custom-button linkedin_link"
       >
         <LinkedInIcon size={40} color={"#000000"}/>
         LinkedIn
@@ -43,7 +42,7 @@ const Contact = () => {
         href="https://github.com/milanmalshika/"
         target="_blank"
         rel="noopener noreferrer"
-        className="custom-button"
+        className="custom-button  git_link"
       >
         <GitHub size={40} color={"#000000"}/>
         GitHub

@@ -78,34 +78,46 @@
     background-color: #c22ed2;
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     width: 250px;
-    height: 70px;
-    font-size: 18px;
+    height: 30px;
+    padding: 8px;
+    font-size: 0.8rem;
+    text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
     transition: all 0.3s ease;
-  }
-  
-  .custom-button svg {
+}
+
+.gmail_link {
+    background-color: #FD4D3E;
+}
+
+.linkedin_link {
+    background-color: #2573A1;
+}
+
+.git_link {
+    background-color: #000000;
+}
+
+.custom-button svg {
     width: 24px;
     height: 24px;
     fill: white;
-  }
-  
-  .custom-button:hover {
+}
+
+.custom-button:hover {
     background-color: #a826b5;
     transform: scale(1.05);
-  }
-  
-  .button-container {
+}
+
+.button-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
-  
-  
+}
