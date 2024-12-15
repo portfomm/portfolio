@@ -1,14 +1,15 @@
 import React, {useState} from "react";
-import "./Portfolio.scss";
+import "./Projects.scss";
 import projectimg from "../../assets/Images/aboutMe.jpg"
 import Modal from "../../custom/Modal/Modal"
 
-const Portfolio = () => {
+const Projects = () => {
     const [openModal, setOpenModal] = useState(false)
     const [details, setDetails] = useState()
 
     const projectsArray = [
         {
+            id: 1,
             name: 'Train Ticket Booking System',
             languages: 'Next Js, Nest Js, TypeScripts, AWS Resources',
             company: 'Avonet Technologies PVT LTD',
@@ -37,6 +38,7 @@ const Portfolio = () => {
             ]
         },
         {
+            id: 2,
             name: 'IMSystem',
             languages: 'HTML, CSS, PHP, Javascript',
             company: '2nd Year Group Project',
@@ -65,13 +67,18 @@ const Portfolio = () => {
               className="project_wrapper"
             >
               <div className="project_cover">
-                <img src={projectimg} alt={project.title} />
+                <img src={projectimg} alt={project.name} />
 
               </div>
               <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '100px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : '-50px'}}>
-                  <h3>{project.title}</h3>
-                  <span>{project.date}</span>
-                </div>
+                  <h3>{project.name}</h3>
+                  <span>{project.company}</span>
+              </div>
+              <button className="contact_button" onClick={() => {
+                console.log('in onclicked func');
+                setOpenModal(true)
+                setDetails(project.details)
+                }}>View More</button>
             </div>
             </div>
           ))}
@@ -86,4 +93,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

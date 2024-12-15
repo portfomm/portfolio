@@ -1,40 +1,140 @@
-.section_left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .section_left {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    .circle_img {
-        width: 500px;
-        height: 500px;
-        background-image: url('../../assets/Images/aboutMe.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+//     .circle_img {
+//         width: 500px;
+//         height: 500px;
+//         background-image: url('../../assets/Images/aboutMe.jpg');
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         border-radius: 50%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         position: relative;
 
         
 
-    }
+//     }
 
-}
+// }
 
-.section_right {
-    width: 50%;
-    height: 100%;
+// .section_right {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     .about-me-dec {
+//         color: #ffffff;
+//         font-size: 0.8rem;
+//         line-height: 2;
+//     }
+
+//     .contact_button {
+//         margin-top: 8px;
+//         padding: 12px;
+//         border-radius: 20px;
+//         border: none;
+//         background-color: #b21eb29e;
+//         color: #ffffff;
+//         min-width: 120px;
+//         font-weight: 600;
+//     }
+
+//     .header_about {
+//         // position: absolute;
+//         // right: 0;
+//         // top: 0;
+//         font-size: 2.8rem;
+//         // max-width: 120px;
+//         color: #ffffff;
+//     }
+
+//     .h3_heading {
+//         // position: absolute;
+//         // right: 0;
+//         // top: 0;
+//         // font-size: 2.8rem;
+//         // max-width: 120px;
+//         color: #ffffff;
+//     }
+// }
+
+// .project_header {
+//     color: #ffffff;
+//     font-size: 5rem;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .modal {
+//     padding: 50px;
+//   }
+
+#portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100%;
 
-    .about-me-dec {
+    .project_heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.8rem;
+        font-weight: 600;
         color: #ffffff;
-        font-size: 0.8rem;
-        line-height: 2;
+    }
+
+    .project_wrapper {
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin: 12px 0;
+        background-color: gray;
+        position: relative;
+
+
+        .project_cover {
+            width: 80%;
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 10px;
+            }
+        }
+
+        .project_header {
+            position: absolute;
+            top: 50px;
+            right: -120px;
+            color: #ffffff;
+
+            h3 {
+                font-size: 2.2rem;
+
+            }
+
+            span {
+                font-size: 1.4rem;
+                color: #e0e0e0;
+            }
+        }
     }
 
     .contact_button {
@@ -47,24 +147,6 @@
         min-width: 120px;
         font-weight: 600;
     }
-
-    .header_about {
-        // position: absolute;
-        // right: 0;
-        // top: 0;
-        font-size: 2.8rem;
-        // max-width: 120px;
-        color: #ffffff;
-    }
-
-    .h3_heading {
-        // position: absolute;
-        // right: 0;
-        // top: 0;
-        // font-size: 2.8rem;
-        // max-width: 120px;
-        color: #ffffff;
-    }
 }
 
 .project_header {
@@ -74,7 +156,3 @@
     flex-direction: column;
     align-items: center;
 }
-
-.modal {
-    padding: 50px;
-  }
