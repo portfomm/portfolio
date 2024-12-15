@@ -1,17 +1,27 @@
 import React, { useState } from "react";
 import "./banner.scss";
+import AwsIcon from "../../../assets/icons/aws";
+import HtmlIcon from "../../../assets/icons/html";
+import NodeJS from "../../../assets/icons/nodejs";
+import CssIcon from "../../../assets/icons/css";
+import NestJsIcon from "../../../assets/icons/nestjs";
+import ExpressJsIcon from "../../../assets/icons/express";
+import DynamoDb from "../../../assets/icons/dynamodb";
+import MySqlIcon from "../../../assets/icons/mysql";
+import BootstrapIcon from "../../../assets/icons/bootstrap";
 
 const TeachBanner = () => {
     const [activeButton , setActiveButton] = useState("FRONT-END")
   const frontEnd = [
-    { id: 1, img: "icon" },
-    { id: 2, img: "icon" },
-    { id: 3, img: "icon" },
-    { id: 4, img: "icon" },
-    { id: 5, img: "icon" },
-    { id: 6, img: "icon" },
-    { id: 7, img: "icon" },
-    { id: 8, img: "icon" },
+    { id: 1, img: <AwsIcon size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
+    { id: 2, img: <HtmlIcon size={120}  color={"#000000"} />, name: '' ,type: 'FRONT-END' },
+    { id: 3, img: <NodeJS size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
+    { id: 4, img: <CssIcon size={120}  color={"#000000"} />, name: '' ,type: 'FRONT-END' },
+    { id: 5, img: <NestJsIcon size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
+    { id: 6, img: <ExpressJsIcon size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
+    { id: 7, img: <DynamoDb size={120}  color={"#000000"} />, name: '' ,type: 'DATABASE' },
+    { id: 8, img: <MySqlIcon size={120}  color={"#000000"} />, name: '' ,type: 'DATABASE' },
+    { id: 9, img: <BootstrapIcon size={120}  color={"#000000"} />, name: '' ,type: 'FRONT-END' }
   ];
   return (
     <section id="banner" className="me-5">
@@ -24,8 +34,8 @@ const TeachBanner = () => {
         </div>
       </div>
       <div className="banner-right">
-        {frontEnd.map((item) => (
-          <div className="box-icon"></div>
+        {frontEnd.filter((item) => item.type === activeButton).map((item) => (
+          <div key={item.id} className="box-icon">{item.img}</div>
           ))}
       </div>
     </section>
