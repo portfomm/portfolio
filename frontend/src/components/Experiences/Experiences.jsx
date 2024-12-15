@@ -78,7 +78,7 @@ const Experiences = () => {
   // );
 
   return (
-    <section id="portfolio" className="d-flex me-5">
+    <section id="experiences" className="d-flex me-5">
         <h2 className="project_heading">My Experiences</h2>
         <div className="w-100 d-flex flex-column align-item-center justify-center">
           {experiencesArray.map((experience, index) => (
