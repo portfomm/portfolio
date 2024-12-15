@@ -68,3 +68,44 @@
     padding: 12px !important;
     border-radius: 20px;
 }
+
+/* Button.css */
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #c22ed2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  
+  .custom-button:hover {
+    background-color: #a826b5;
+    transform: scale(1.05);
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  
