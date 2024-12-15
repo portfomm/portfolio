@@ -117,11 +117,26 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
 
     img {
         object-fit: contain;
         height: 100%
     }
+}
+
+.its-me::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('../../assets/Images/waterBubble.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
 }
 
 .social-media {
