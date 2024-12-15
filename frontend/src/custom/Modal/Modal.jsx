@@ -1,52 +1,46 @@
-import React, { useEffect, useState } from 'react'
-
-import Modal from 'react-modal'
-
-import CloseIcon from '../../assets/icons/close'
-
-
-Modal.setAppElement('#root')
-// Modal.setAppElement('body')
+import React, { useEffect, useState } from "react";
+import "./Modal.scss";
+import CloseIcon from "../../assets/icons/close";
 
 const CommonModal = ({
-  open = false,
+  open = true,
   children,
   onCloseModal,
   shouldCloseOnOverlayClick = false,
   shouldCloseOnEsc = false,
-  hideCloseButton = false
+  hideCloseButton = false,
 }) => {
-    console.log('in cus modal');
-    
-  const [isOpen, setIsOpen] = useState(open)
+  const [isOpen, setIsOpen] = useState(open);
 
   const handleClose = () => {
-    setIsOpen(false)
-    onCloseModal(false)
-  }
+    setIsOpen(false);
+    if (onCloseModal) {
+      onCloseModal(false); 
+    }
+  };
 
   useEffect(() => {
-    setIsOpen(open)
-  }, [open])
+    setIsOpen(open);
+  }, [open]);
 
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={handleClose}
-      contentLabel="customModal"
-      className="customModal"
-      overlayClassName="modalOverlay"
-      shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}
-      shouldCloseOnEsc={shouldCloseOnEsc}
-    >
-      {!hideCloseButton && (
-        <button type="button" className="modalButton" onClick={handleClose}>
-          <CloseIcon />
-        </button>
-      )}
-      {children}
-    </Modal>
-  )
-}
+    <div className="container" style={{ display: isOpen ? "block" : "none" }}>
+      <div
+        className="gray"
+        onClick={shouldCloseOnOverlayClick ? handleClose : undefined}
+      ></div>
+      <div className="modal">
+        <div className="modal-container">
+          {!hideCloseButton && (
+            <button className="close-button" onClick={handleClose}>
+              <CloseIcon />
+            </button>
+          )}
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default CommonModal
+export default CommonModal;

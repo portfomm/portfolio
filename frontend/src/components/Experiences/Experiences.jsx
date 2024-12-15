@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Experiences.scss';
 import Modal from "../../custom/Modal/Modal"
 import projectimg from "../../assets/Images/aboutMe.jpg"
+import CommonModal from '../../custom/Modal/Modal';
 
 const Experiences = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -76,6 +77,7 @@ const Experiences = () => {
   // </Modal>
   //   </>
   // );
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <section id="experiences" className="d-flex me-5">
@@ -98,20 +100,17 @@ const Experiences = () => {
                   <span>{experience.company}</span>
               </div>
               <button className="contact_button" onClick={() => {
-                console.log('in onclicked func');
-                setOpenModal(true)
+                setIsModalOpen(true)
                 setDetails(experience.moreDetails)
                 }}>View More</button>
             </div>
             </div>
           ))}
         </div>
-          <Modal open={openModal} onCloseModal={(value) => setOpenModal(value)}>
-              <div className="modal">
-                  <h2>helloo</h2>
-                  <p>Modal is here</p>
-              </div>
-          </Modal>
+         <CommonModal   open={isModalOpen}
+        onCloseModal={(isOpen) => setIsModalOpen(isOpen)} >
+          <h1>{details ? details.project : ''}</h1>
+        </CommonModal>
       </section>
   )
 };
