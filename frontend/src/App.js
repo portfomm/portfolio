@@ -6,6 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Experiences from "./components/Experiences/Experiences";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import TeachBanner from "./components/common/Banners/TeachBanner";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <div className="content-wrapper">
         <Hero />
+        <TeachBanner />
         <About />
         <Experiences />
         <Projects />
