@@ -25,7 +25,23 @@ code {
   display: flex;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
+.align-item-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
 .me-5{
   margin-top:3.2rem;
   margin-bottom: 3.2rem;
+}
+
+.w-100{
+  width: 100%;
 }

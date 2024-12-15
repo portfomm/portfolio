@@ -1,29 +1,44 @@
-import React from 'react';
-import './Portfolio.scss';
+import React from "react";
+import "./Portfolio.scss";
+import projectimg from "../../assets/Images/aboutMe.jpg"
 
 const Portfolio = () => {
+
+  const projects = [
+    { id: 1, img: projectimg, title: "Project 1", date: "Dec 2023" },
+    { id: 2, img: projectimg, title: "Project 2", date: "Jan 2024" },
+    { id: 3, img: projectimg, title: "Project 3", date: "Feb 2024" },
+    { id: 4, img: projectimg, title: "Project 4", date: "Mar 2024" },
+    { id: 5, img: projectimg, title: "Project 5", date: "Apr 2024" },
+    { id: 6, img: projectimg, title: "Project 6", date: "May 2024" },
+  ];
+
   return (
-    <section id="portfolio" className='d-flex me-5'>
-            <div className="section_right">
-        {" "}
-        <p className="about-me-dec">
-          I have more than 3 years of experience in Software Engineering field.
-          I’m an enthusiastic and ambitious person who passionate of learning
-          new technologies while taking up new challenges. As being a good team
-          player and quick learner. I’m willing to serve for an organization
-          allowing me to learn, develop my skills, utilize my knowledge and
-          experience through working with a team to pursue common goals deliver
-          the best results to the organization and society while advancing my
-          career.
-        </p>
-        <button className="contact_button">Contact Me</button>
-      </div>
-      <div className="section_left">
-        <div className="circle_img">
-          <h2 className="header_about">My Projects</h2>
+
+      <section id="portfolio" className="d-flex me-5">
+        <h2 className="project_heading">My Projects</h2>
+        <div className="w-100 d-flex flex-column align-item-center justify-center">
+          {projects.map((project, index) => (
+            <div className="w-100 d-flex"  style={{
+              justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
+            }}>
+            <div
+              key={project.id}
+              className="project_wrapper"
+            >
+              <div className="project_cover">
+                <img src={project.img} alt={project.title} />
+               
+              </div>
+              <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '100px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : '-50px'}}>
+                  <h3>{project.title}</h3>
+                  <span>{project.date}</span>
+                </div>
+            </div>
+            </div>
+          ))}
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 
