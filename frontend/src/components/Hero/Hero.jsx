@@ -6,8 +6,12 @@ import GitHub from '../../assets/icons/github';
 import GmailIcon from '../../assets/icons/gmail';
 
 const Hero = () => {
-  const handleSubmit = () => {
+  const handleDownload = () => {
     console.log('hi clicked');
+    // Path to the local PDF file in the 'public' folder
+    const pdfPath = "/pdf/cv.pdf";
+
+    window.open(pdfPath, "_blank");
   }
 
   return (
@@ -17,7 +21,7 @@ const Hero = () => {
           <span className='occ'>SOFTWARE ENGINEER</span>
           <h1>MILAN MALSHIKA</h1>
           <div className='download-cv'>
-            <button className='download-btn' onClick={handleSubmit}>CV</button>
+            <button className='download-btn' onClick={handleDownload}>CV</button>
           </div>
         </div>
         <div className='desc'>
