@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     margin: 40px 0;
+    position: relative;
 
     .about_me {
 
@@ -118,6 +119,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
         object-fit: contain;
@@ -176,4 +180,18 @@
     height: 100%;
     background-color: #888888;
     left: 0;
+}
+
+
+#hero::after {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    background-image: url("../../assets/Images/fillerImage.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -5%;
+    bottom: -30%;
 }

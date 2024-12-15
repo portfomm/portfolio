@@ -56,3 +56,28 @@
         }
     }
 }
+
+
+.project-item-left,
+.project-item-right {
+    position: relative;
+}
+
+.project-item-left::after,
+.project-item-right::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    background-image: url("../../assets/Images/fillerImage.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 30%;
+    bottom: -30%;
+}
+
+.project-item-right::before {
+    right: unset !important;
+    left: 30% !important;
+}
