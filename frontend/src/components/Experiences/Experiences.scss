@@ -18,14 +18,7 @@
         justify-content: center;
         position: relative;
 
-        .header_about {
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 2.8rem;
-            max-width: 120px;
-            color: #ffffff;
-        }
+        
 
     }
 
@@ -54,6 +47,24 @@
         min-width: 120px;
         font-weight: 600;
     }
+
+    .header_about {
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+        font-size: 2.8rem;
+        // max-width: 120px;
+        color: #ffffff;
+    }
+
+    .h3_heading {
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+        // font-size: 2.8rem;
+        // max-width: 120px;
+        color: #ffffff;
+    }
 }
 
 .project_header {
@@ -63,3 +74,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.modal {
+    padding: 50px;
+  }
