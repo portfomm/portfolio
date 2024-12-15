@@ -59,7 +59,7 @@ const Projects = () => {
         <h2 className="project_heading">My Projects</h2>
         <div className="w-100 d-flex flex-column align-item-center justify-center">
           {projectsArray.map((project, index) => (
-            <div className="w-100 d-flex"  style={{
+           <div className={`w-100 d-flex ${'project-item'.concat(index % 2 === 0 ? '-left' : '-right')}`}  style={{
               justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
             }}>
             <div
