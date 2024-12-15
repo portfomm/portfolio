@@ -14,7 +14,8 @@ const Navbar = () => {
       <ul>
         <li onClick={() => handleScroll('hero')}>Home</li>
         <li onClick={() => handleScroll('about')}>About</li>
-        <li onClick={() => handleScroll('portfolio')}>Portfolio</li>
+        <li onClick={() => handleScroll('experiences')}>Experiences</li>
+        <li onClick={() => handleScroll('projects')}>Projects</li>
         <li onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
     <div className="controller_Section">
