@@ -16,10 +16,11 @@ const Navbar = () => {
         <li onClick={() => handleScroll('about')}>About</li>
         <li onClick={() => handleScroll('experiences')}>Experiences</li>
         <li onClick={() => handleScroll('projects')}>Projects</li>
+        <li onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
-    <div className="controller_Section">
+    {/* <div className="controller_Section">
         <button>Contact us</button>
-    </div>
+    </div> */}
     </nav>
   );
 };

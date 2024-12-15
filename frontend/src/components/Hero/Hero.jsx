@@ -1,9 +1,9 @@
 import React from 'react';
 import './Hero.scss';
 import itsMe from "../../assets/Images/itsMe.png"
-import FaceBookIcon from '../../assets/icons/facebook';
-import Instagram from '../../assets/icons/instagram';
-import Xicon from '../../assets/icons/twitter';
+import LinkedInIcon from '../../assets/icons/linkedin';
+import GitHub from '../../assets/icons/github';
+import GmailIcon from '../../assets/icons/gmail';
 
 const Hero = () => {
   const handleSubmit = () => {
@@ -29,12 +29,12 @@ const Hero = () => {
       </div>
       <div className='social-media'>
         <ul>
-          <li><a href='https://www.linkedin.com/in/milan-malshika-12a9861a1/' target="_blank"><FaceBookIcon size={32} color={"#000000"}/></a></li>
+          <li><a href='https://www.linkedin.com/in/milan-malshika-12a9861a1/' target="_blank"><LinkedInIcon size={40} color={"#000000"}/></a></li>
           <li><a href='https://github.com/milanmalshika' target="_blank">
-            <Instagram size={32} color={"#000000"}/>
+            <GitHub size={40} color={"#000000"}/>
             </a></li>
-          <li><a href='#'>
-            <Xicon size={32}  color={"#000000"} />
+          <li><a href='mailto:milanmalshika22@gmail.com'>
+            <GmailIcon size={30}  color={"#000000"} />
             </a></li>
 
         </ul>
