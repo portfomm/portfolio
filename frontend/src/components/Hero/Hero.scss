@@ -204,3 +204,16 @@
     left: -5%;
     bottom: -30%;
 }
+
+
+@media (max-width: 1400px) {
+    #hero {
+        width: 95%;
+        flex-direction: column;
+
+        .its-me {
+            margin: 20px 0;
+        }
+
+    }
+}
