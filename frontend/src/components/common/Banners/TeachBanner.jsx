@@ -8,7 +8,6 @@ import NestJsIcon from "../../../assets/icons/nestjs";
 import ExpressJsIcon from "../../../assets/icons/express";
 import DynamoDb from "../../../assets/icons/dynamodb";
 import MySqlIcon from "../../../assets/icons/mysql";
-import BootstrapIcon from "../../../assets/icons/bootstrap";
 
 const TeachBanner = () => {
     const [activeButton , setActiveButton] = useState("FRONT-END")
@@ -20,8 +19,7 @@ const TeachBanner = () => {
     { id: 5, img: <NestJsIcon size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
     { id: 6, img: <ExpressJsIcon size={120}  color={"#000000"} />, name: '' ,type: 'BACK-END' },
     { id: 7, img: <DynamoDb size={120}  color={"#000000"} />, name: '' ,type: 'DATABASE' },
-    { id: 8, img: <MySqlIcon size={120}  color={"#000000"} />, name: '' ,type: 'DATABASE' },
-    { id: 9, img: <BootstrapIcon size={120}  color={"#000000"} />, name: '' ,type: 'FRONT-END' }
+    { id: 8, img: <MySqlIcon size={120}  color={"#000000"} />, name: '' ,type: 'DATABASE' }
   ];
   return (
     <section id="banner" className="me-5">

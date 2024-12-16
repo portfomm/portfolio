@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import "./Projects.scss";
 import projectimg from "../../assets/Images/aboutMe.jpg"
-import Modal from "../../custom/Modal/Modal"
+import CommonModal from "../../custom/Modal/Modal";
 
 const Projects = () => {
-    const [openModal, setOpenModal] = useState(false)
     const [details, setDetails] = useState()
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     const projectsArray = [
         {
@@ -76,19 +76,44 @@ const Projects = () => {
               </div>
               <button className="contact_button" onClick={() => {
                 console.log('in onclicked func');
-                setOpenModal(true)
-                setDetails(project.details)
+                setIsModalOpen(true)
+                setDetails(project)
                 }}>View More</button>
             </div>
             </div>
           ))}
         </div>
-          <Modal open={openModal} onCloseModal={(value) => setOpenModal(value)}>
-              <div className="modal">
-                  <h2>helloo</h2>
-                  <p>Modal is here</p>
-              </div>
-          </Modal>
+          {details && <CommonModal open={isModalOpen}
+        onCloseModal={(isOpen) => setIsModalOpen(isOpen)}>
+                  <h2>{details?.name}</h2>
+                  <p>{details?.company}</p>
+                  <p>{details?.languages}</p>
+                  <p>{details?.discription}</p>
+                  {details?.clients && 
+                    <>
+                    <p>Clients: </p>
+                    <ul>
+                    {details?.clients?.map((item)=> (
+                        <li><a
+                        href={item?.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="custom-button  gmail_link"
+                      >{item?.name}</a></li>
+                    ))}
+                  </ul>
+                    </>}
+                    {details?.options && 
+                    <>
+                    <p>We prepared: </p>
+                    <ul>
+                    {details?.options?.map((item)=> (
+                        <li>{item}</li>
+                    ))}
+                  </ul>
+                    </>}
+                    {details.githubUrl && <p>GitHub: {details?.githubUrl ?? ''}</p>}
+          </CommonModal>}
       </section>
   );
 };

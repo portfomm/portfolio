@@ -14,8 +14,8 @@ function App() {
       <Navbar />
       <div className="content-wrapper">
         <Hero />
-        <TeachBanner />
         <About />
+        <TeachBanner />
         <Experiences />
         <Projects />
         <Contact />

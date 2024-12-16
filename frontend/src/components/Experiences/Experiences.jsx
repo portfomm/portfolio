@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import './Experiences.scss';
-import Modal from "../../custom/Modal/Modal"
 import projectimg from "../../assets/Images/aboutMe.jpg"
 import CommonModal from '../../custom/Modal/Modal';
 
 const Experiences = () => {
-  const [openModal, setOpenModal] = useState(false)
   const [details, setDetails] = useState()
 
   const experiencesArray = [
@@ -42,41 +40,26 @@ const Experiences = () => {
           'Began leveraging AWS Amplify to enhance project development and deployment workflows.'
         ]
       }
+    },
+    {
+      id: 3,
+      post: 'Software Engineer Intern',
+      company: 'Avonet Technologies PVT LTD',
+      companyLocation: 'Kent Town SA 5067, Australia',
+      duration: 'Oct 2021 - Apr 2022',
+      moreDetails: {
+        project: 'Train Ticket Booking System',
+        clients: 'International Rail, Ohshu Express, WebBeds',
+        description: 'The International Rail project was converted into a customizable product as name ”AVNLINK”.',
+        technologies: 'NextJs, NestJs, TypeScripts, AWS Resources',
+        myResponsibilities: [
+          'Built user interfaces based on Figma design specifications, ensuring a high standard of quality and user experience.',
+          'Designed and implemented backend functionalities to support core application requirements.'
+        ]
+      }
     }
   ]
 
-  // return (
-  //   <>
-  //   <h1 className='project_header'>My Experiences</h1>
-  //   {experiencesArray.map((experience) => (
-  //     <>
-  //     <section id="portfolio" className='d-flex me-5'>
-  //     <div className="section_right">
-  //       {" "}
-  //       <h2 className="header_about">{experience.post}</h2>
-  //       <h3 className="h3_heading">{experience.company}</h3>
-  //       <h3 className="h3_heading">{experience.duration}</h3>
-  //       <button className="contact_button" onClick={() => {
-  //         console.log('in onclicked func');
-  //         setOpenModal(true)
-  //         setDetails(experience.moreDetails)
-  //         }}>View More</button>
-  //     </div>
-  //     <div className="section_left">
-  //       <div className="circle_img">
-  //       </div>
-  //     </div>
-  //   </section>
-  // </>
-  //   ))}
-  //   <Modal open={openModal} onCloseModal={(value) => setOpenModal(value)}>
-  //   <div className="modal">
-  //     <h2>helloo</h2>
-  //     <p>Modal is here</p>
-  //   </div>
-  // </Modal>
-  //   </>
-  // );
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
@@ -107,10 +90,18 @@ const Experiences = () => {
             </div>
           ))}
         </div>
-         <CommonModal   open={isModalOpen}
+         {details && <CommonModal   open={isModalOpen}
         onCloseModal={(isOpen) => setIsModalOpen(isOpen)} >
-          <h1>{details ? details.project : ''}</h1>
-        </CommonModal>
+          <h1>{details?.project ?? ''}</h1>
+          <h4>Clients: {details?.clients ?? ''}</h4>
+          <p>{details?.description ?? ''}</p>
+          <p>{details?.technologies ?? ''}</p>
+          <ul>
+            {details?.myResponsibilities?.map((item)=> (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </CommonModal>}
       </section>
   )
 };

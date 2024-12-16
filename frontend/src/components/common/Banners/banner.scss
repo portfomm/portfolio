@@ -4,12 +4,13 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     .banner-left {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        margin-right: 180px;
+        // width: 30%;
 
         h2 {
             font-size: 2.2rem;
@@ -44,7 +45,7 @@
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
-        width: 50%;
+        // width: 70%;
 
         .box-icon {
             width: 70px;

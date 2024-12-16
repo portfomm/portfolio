@@ -9,11 +9,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <div className='mainLogo'>
-            <h1>Milan Malshika</h1>
+            {/* <h1>Milan Malshika</h1> */}
         </div>
       <ul>
         <li onClick={() => handleScroll('hero')}>Home</li>
         <li onClick={() => handleScroll('about')}>About</li>
+        <li onClick={() => handleScroll('banner')}>Skills</li>
         <li onClick={() => handleScroll('experiences')}>Experiences</li>
         <li onClick={() => handleScroll('projects')}>Projects</li>
         <li onClick={() => handleScroll('contact')}>Contact</li>
