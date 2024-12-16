@@ -94,3 +94,10 @@
     right: -5%;
     bottom: -30%;
 }
+
+
+@media (max-width: 1400px) {
+    #about {
+        flex-direction: column;
+    }
+}

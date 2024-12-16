@@ -117,3 +117,10 @@ code {
 p{
   font-family: 'MADE Outer Sans regular'  !important;
 }
+
+
+@media (max-width: 1290px) {
+  .content-wrapper{
+    width: 95%;
+  }
+}

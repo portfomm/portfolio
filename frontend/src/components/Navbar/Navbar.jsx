@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const handleScroll = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false); 
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <nav className="navbar">
-        <div className='mainLogo'>
-            {/* <h1>Milan Malshika</h1> */}
-        </div>
-      <ul>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
+      </div>
+      <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <li onClick={() => handleScroll('hero')}>Home</li>
         <li onClick={() => handleScroll('about')}>About</li>
         <li onClick={() => handleScroll('banner')}>Skills</li>
@@ -19,9 +28,6 @@ const Navbar = () => {
         <li onClick={() => handleScroll('projects')}>Projects</li>
         <li onClick={() => handleScroll('contact')}>Contact</li>
       </ul>
-    {/* <div className="controller_Section">
-        <button>Contact us</button>
-    </div> */}
     </nav>
   );
 };
