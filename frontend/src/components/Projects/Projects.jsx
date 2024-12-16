@@ -38,7 +38,15 @@ const Projects = () => {
             ]
         },
         {
-            id: 2,
+          id: 2,
+          name: 'SmartRide',
+          languages: 'Flutter, PostgreSQL, Express, React, NodeJs',
+          company: '3rd Year Group Project',
+          discription: 'Mobile application to pay the bus fare and web app for bus owner to handle their busses and their routes. Kind of a mobile wallet works with NFC technology; passengers can pay the bus fare according to the distance they travel. And view details about routes.',
+          githubUrl: 'https://github.com/Group-29-3rd-Year/'
+      },
+        {
+            id: 3,
             name: 'IMSystem',
             languages: 'HTML, CSS, PHP, Javascript',
             company: '2nd Year Group Project',
@@ -117,7 +125,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="custom-button  gmail_link"
-                      >GitHub Link</a></p>}
+                      >{details?.name ?? ''}</a></p>}
           </CommonModal>}
       </section>
   );

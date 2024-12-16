@@ -20,7 +20,13 @@ const Experiences = () => {
         technologies: 'NextJs, NestJs, TypeScripts, AWS Resources',
         myResponsibilities: [
           'Successfully integrated the PAYTEN payment method as a configurable feature for the Odamigo client, ensuring seamless and efficient payment processing.',
-          'Took ownership of releasing QA, staging, and live versions of projects, incorporating DevOps practices to streamline deployment workflows.'
+          'Took ownership of releasing QA, staging, and live versions of projects, incorporating DevOps practices to streamline deployment workflows.',
+          'Managed and configured domains using AWS Route 53 to ensure reliability and scalability.',
+          'Designed and planned the invoice flow for credit booking processes, collaborating closely with team members and providing technical guidance to other developers.',
+          'Spearheaded the design and planning of a ferry booking process integrated into the International Rail platform, supervising other developers to ensure successful implementation.',
+          'Planned and designed for invoice flow for credit bookings. And handled other developers for that.',
+          'Implemented OKTA sign-in (external identity provider) with AWS Cognito for seamless user authentication in the International Rail project.',
+          'Planned and analyzed client requirements, creating detailed estimation documents to facilitate project planning and execution.'
         ]
       }
     },
@@ -37,7 +43,11 @@ const Experiences = () => {
         technologies: 'NextJs, NestJs, TypeScripts, AWS Resources',
         myResponsibilities: [
           'Implemented the GMO payment gateway into the Ohshu project as a configurable option alongside the existing Stripe gateway, ensuring flexibility and adaptability in payment processing.',
-          'Began leveraging AWS Amplify to enhance project development and deployment workflows.'
+          'Began leveraging AWS Amplify to enhance project development and deployment workflows.',
+          'Planned, designed, and supervised the implementation of Japanese translations for the website, guiding other developers to ensure accurate localization.',
+          'Designed and implemented an offline booking process for administrators on the International Rail platform, coordinating with and mentoring other developers during the development phase.',
+          'Developed and implemented the credit booking flow for WebBeds and Ohshu projects, providing technical leadership to other team members throughout the process.',
+          'Configured and added MFA functionality using AWS Cognito for secure logins in the WebBeds project.'
         ]
       }
     },
@@ -54,7 +64,9 @@ const Experiences = () => {
         technologies: 'NextJs, NestJs, TypeScripts, AWS Resources',
         myResponsibilities: [
           'Built user interfaces based on Figma design specifications, ensuring a high standard of quality and user experience.',
-          'Designed and implemented backend functionalities to support core application requirements.'
+          'Designed and implemented backend functionalities to support core application requirements.',
+          'Successfully completed end-to-end integrations between frontend, backend, and third-party services to ensure seamless functionality.',
+          'Identified and resolved software bugs, improving overall system stability and performance.'
         ]
       }
     }
