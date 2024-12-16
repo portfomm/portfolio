@@ -27,6 +27,10 @@ const Hero = () => {
         <div className='desc'>
           <p className='about-me-dec'>Hi there, I'm a full stack software engineer. I work remotely and on site as well.</p>
         </div>
+        <div className='desc'>
+          <p className='about-me-dec'>milanmalshika22@gmail.com</p>
+          <p className='about-me-dec'>+9475-542-8226</p>
+        </div>
       </div>
       <div className='its-me'>
         <img src={itsMe} alt='milan malishka' />
