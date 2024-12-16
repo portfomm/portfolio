@@ -112,7 +112,12 @@ const Projects = () => {
                     ))}
                   </ul>
                     </>}
-                    {details.githubUrl && <p>GitHub: {details?.githubUrl ?? ''}</p>}
+                    {details.githubUrl && <p>GitHub: <a
+                        href={details?.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="custom-button  gmail_link"
+                      >GitHub Link</a></p>}
           </CommonModal>}
       </section>
   );

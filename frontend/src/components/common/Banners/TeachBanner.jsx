@@ -24,7 +24,7 @@ const TeachBanner = () => {
   return (
     <section id="banner" className="me-5">
       <div className="banner-left">
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
         <div className="btn-section">
           <button className={activeButton === "FRONT-END" ? 'active' : ''} onClick={() => setActiveButton("FRONT-END")}>Front End</button>
           <button className={activeButton === "BACK-END" ? 'active' : ''} onClick={() => setActiveButton("BACK-END")}>Back End</button>

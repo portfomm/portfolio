@@ -33,7 +33,7 @@ organization and society while advancing my career.</p>
           the best results to the organization and society while advancing my
           career.
         </p>
-        <button className="contact_button">Contact Me</button>
+        {/* <button className="contact_button">Contact Me</button> */}
       </div>
     </section>
   );
