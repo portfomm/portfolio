@@ -78,6 +78,7 @@
             color: #ffffff;
             min-width: 120px;
             font-weight: 600;
+            cursor: pointer;
         }
     }
 }
@@ -99,5 +100,14 @@
 @media (max-width: 1400px) {
     #about {
         flex-direction: column;
+
+        .section_left {
+            width: unset;
+        }
+    }
+
+    #about::after {
+        right: 0%;
+        bottom: -30%;
     }
 }

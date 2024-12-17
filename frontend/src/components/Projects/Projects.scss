@@ -63,6 +63,7 @@
         min-width: 120px;
         font-weight: 600;
         position: absolute;
+        cursor: pointer;
     }
 }
 
@@ -97,4 +98,39 @@
 .project-item-right::before {
     right: unset !important;
     left: 30% !important;
+}
+
+.list-items {
+    list-style: none;
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .project_wrapper {
+        flex-direction: column;
+        width: unset !important;
+        height: auto !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-item-left {
+
+        flex-direction: column;
+        width: unset;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+
+        .project_header {
+            position: unset !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

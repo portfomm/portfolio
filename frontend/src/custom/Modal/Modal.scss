@@ -81,6 +81,7 @@
     border-radius: 8px;
     box-shadow: 0px 2px 10px 0px #565656;
 
+
     .modal-container {
       position: relative;
       width: 100%;
@@ -102,6 +103,11 @@
         cursor: pointer;
       }
 
+      .modal-body {
+        max-height: 75vh;
+        overflow: hidden;
+        overflow-y: auto;
+      }
     }
   }
 

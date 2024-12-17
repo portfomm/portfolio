@@ -36,8 +36,8 @@
             align-items: center;
             justify-content: center;
             position: absolute;
-            right: 10%;
-            bottom: -75%;
+            right: 0;
+            bottom: 0;
 
 
             .download-btn {
@@ -114,7 +114,7 @@
 }
 
 .desc {
-    max-width: 350px;
+    // max-width: 350px;
     font-size: 0.9rem;
     color: #888888;
     line-height: 1.8;
@@ -202,18 +202,42 @@
     background-size: contain;
     background-repeat: no-repeat;
     left: -5%;
-    bottom: -30%;
+    bottom: -50%;
 }
 
 
 @media (max-width: 1400px) {
     #hero {
         width: 95%;
+        height: 100%;
         flex-direction: column;
+        align-items: center;
 
         .its-me {
             margin: 20px 0;
         }
 
+    }
+
+    .download-cv {
+        position: unset !important;
+    }
+
+    .its-me img {
+        width: 400px;
+    }
+
+    .social-media {
+        width: unset;
+    }
+
+    .social-media ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about_me {
+        width: unset !important;
     }
 }

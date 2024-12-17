@@ -36,7 +36,9 @@ const CommonModal = ({
               <CloseIcon />
             </button>
           )}
+          <div className="modal-body">
           {children}
+          </div>
         </div>
       </div>
     </div>
