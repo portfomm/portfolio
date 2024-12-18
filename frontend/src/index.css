@@ -66,6 +66,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MADE Outer Sans paragraph use';
+  src: url('./assets/fonts/MADE\ Outer\ Sans\ Light\ PERSONAL\ USE.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: 'MADE Outer Sans Regular', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
@@ -114,8 +121,19 @@ code {
   width: 100%;
 }
 
-p{
-  font-family: 'MADE Outer Sans regular'  !important;
+p {
+  font-family: 'MADE Outer Sans paragraph use'  !important;
+  font-weight: 500 !important;
+}
+
+ul {
+  font-family: 'MADE Outer Sans paragraph use'  !important;
+  font-weight: 300 !important;
+}
+
+h4 {
+  font-family: 'MADE Outer Sans paragraph use'  !important;
+  font-weight: 700 !important;
 }
 
 
