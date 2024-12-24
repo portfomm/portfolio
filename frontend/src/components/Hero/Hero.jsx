@@ -27,7 +27,7 @@ const Hero = () => {
         <div className='desc'>
           <p className='about-me-dec'>I'm a passionate full-stack software engineer from Sri Lanka with expertise in JavaScript technologies across the stack, including Node.js, Express, React, and NestJS, alongside AWS. While I enjoy working on both frontend and backend, my true focus is backend development and DevOps. I thrive on building scalable, efficient systems and am flexible to work either remotely or onsite.</p>
         </div>
-        <div className='desc'>
+        <div className='desc dec-text-right'>
           <p>milanmalshika22@gmail.com</p>
           <p>+9475-542-8226</p>
         </div>

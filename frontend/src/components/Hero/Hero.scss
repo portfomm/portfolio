@@ -120,6 +120,16 @@
     line-height: 1.8;
 }
 
+.dec-text-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    p {
+        margin: 4px 0;
+    }
+}
+
 .its-me {
     width: 40%;
     height: 100%;
