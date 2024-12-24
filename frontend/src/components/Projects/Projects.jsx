@@ -81,23 +81,7 @@ const Projects = () => {
               <div className="project_cover">
                 <img src={projectimg} alt={project.name} />
               </div>
-              <div
-                className="project_header"
-                style={{
-                  top:
-                    index % 3 === 0
-                      ? "0px"
-                      : index % 3 === 1
-                      ? "50px"
-                      : "100px",
-                  left:
-                    index % 3 === 0
-                      ? "unset"
-                      : index % 3 === 1
-                      ? "-50px"
-                      : "-50px",
-                }}
-              >
+              <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '50px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : 'unset', right: index % 3 === 1 ? '' : '-50px'}}>
                 <h3>{project.name}</h3>
                 <span>{project.company}</span>
               </div>

@@ -42,6 +42,7 @@
             top: 50px;
             right: 12%;
             color: #ffffff;
+            max-width: 700px;
 
             h3 {
                 font-size: 2.2rem;
@@ -90,5 +91,28 @@
         .project_header {
             position: unset;
         }
+    }
+}
+
+
+@media (max-width: 1090px) {
+    .contact_button {
+        top: 0 !important;
+    }
+
+    .project_header h3 {
+        margin: 8px 0 !important;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+
+    span {
+        font-size: 1rem !important;
+    }
+
+    .project-item-left::after,
+    .project-item-right::before {
+        display: none !important;
     }
 }

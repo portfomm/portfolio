@@ -90,7 +90,7 @@ const Experiences = () => {
                 <img src={projectimg} alt={experience.post} />
 
               </div>
-              <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '100px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : '-50px'}}>
+              <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '50px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : 'unset', right: index % 3 === 1 ? '' : '-50px'}}>
                   <h3>{experience.post}</h3>
                   <span>{experience.company}</span>
               </div>
