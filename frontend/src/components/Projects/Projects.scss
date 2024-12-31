@@ -128,13 +128,20 @@
         justify-content: center;
 
         .project_header {
-            position: unset !important;
+            position: unset;
             display: flex;
             align-items: center;
             justify-content: center;
         }
     }
 }
+
+@media (max-width: 1350px) {
+    .project_header {
+        position: unset !important;
+    }
+}
+
 
 @media (max-width: 1090px) {
     .contact_button {

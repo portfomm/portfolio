@@ -117,8 +117,19 @@
     }
 
     .project_header {
-        position: unset !important;
+        position: unset;
         margin: 4px 0;
 
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .project_heading {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
 }
