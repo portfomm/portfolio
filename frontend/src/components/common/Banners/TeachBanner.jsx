@@ -10,9 +10,12 @@ import DynamoDb from "../../../assets/icons/dynamodb";
 import MySqlIcon from "../../../assets/icons/mysql";
 import TypeScriptIcon from "../../../assets/icons/typescript";
 import JavaScriptIcon from "../../../assets/icons/javascript";
+import JavaIcon from "../../../assets/icons/java";
+import NextJsIcon from "../../../assets/icons/nextjs";
+import MongoDbIcon from "../../../assets/icons/mongodb";
 
 const TeachBanner = () => {
-  const skillsTypes = ["FRONT-END", "BACKEND", "DATABASE"];
+  const skillsTypes = ["FRONTEND", "BACKEND", "DATABASE"];
   const frontEnd = [
     {
       id: 1,
@@ -24,7 +27,7 @@ const TeachBanner = () => {
       id: 2,
       img: <HtmlIcon size={120} color={"#000000"} />,
       name: "",
-      type: "FRONT-END",
+      type: "FRONTEND",
     },
     {
       id: 3,
@@ -36,7 +39,7 @@ const TeachBanner = () => {
       id: 4,
       img: <CssIcon size={120} color={"#000000"} />,
       name: "",
-      type: "FRONT-END",
+      type: "FRONTEND",
     },
     {
       id: 5,
@@ -63,28 +66,46 @@ const TeachBanner = () => {
       type: "DATABASE",
     },
     {
-      id: 1,
+      id: 9,
       img: <TypeScriptIcon size={120} color={"#000000"} />,
       name: "",
       type: "BACKEND",
     },
     {
-      id: 1,
+      id: 10,
       img: <TypeScriptIcon size={120} color={"#000000"} />,
       name: "",
-      type: "FRONT-END",
+      type: "FRONTEND",
     },
     {
-      id: 1,
+      id: 11,
       img: <JavaScriptIcon size={120} color={"#000000"} />,
       name: "",
       type: "BACKEND",
     },
     {
-      id: 1,
+      id: 12,
       img: <JavaScriptIcon size={120} color={"#000000"} />,
       name: "",
-      type: "FRONT-END",
+      type: "FRONTEND",
+    },
+    {
+      id: 13,
+      img: <JavaIcon size={120} color={"#000000"} />,
+      name: "",
+      type: "BACKEND",
+    },
+    {
+      id: 14,
+      img: <NextJsIcon size={120} color={"#000000"} />,
+      name: "",
+      type: "FRONTEND",
+    },
+    {
+      id: 15,
+      img: <MongoDbIcon size={120} color={"#000000"} />,
+      name: "",
+      type: "DATABASE",
     },
   ];
   return (

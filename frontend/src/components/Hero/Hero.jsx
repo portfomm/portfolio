@@ -7,7 +7,7 @@ import GmailIcon from '../../assets/icons/gmail';
 
 const Hero = () => {
   const handleDownload = () => {
-    const pdfPath = "https://drive.google.com/file/d/1lkVH_Y6AACjvn1E3jYFQ63UHFga1exGb/view?usp=sharing";
+    const pdfPath = "https://drive.google.com/file/d/1O-8ki6o_ZPaTJtRvoPOmi6r5DIl2CD7j/view?usp=sharing";
 
     window.open(pdfPath, "_blank");
   }
