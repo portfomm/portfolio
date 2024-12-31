@@ -1,15 +1,13 @@
 import React from 'react';
 import './Hero.scss';
-import itsMe from "../../assets/Images/itsMe.png"
+import itsMe from "../../assets/Images/myimg3.png"
 import LinkedInIcon from '../../assets/icons/linkedin';
 import GitHub from '../../assets/icons/github';
 import GmailIcon from '../../assets/icons/gmail';
 
 const Hero = () => {
   const handleDownload = () => {
-    console.log('hi clicked');
-    // Path to the local PDF file in the 'public' folder
-    const pdfPath = "/pdf/cv.pdf";
+    const pdfPath = "https://drive.google.com/file/d/1lkVH_Y6AACjvn1E3jYFQ63UHFga1exGb/view?usp=sharing";
 
     window.open(pdfPath, "_blank");
   }
