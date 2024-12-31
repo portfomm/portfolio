@@ -3,6 +3,7 @@ import "./Projects.scss";
 import projectimg1 from "../../assets/Images/projects1.png"
 import projectimg2 from "../../assets/Images/projects2.png"
 import projectimg3 from "../../assets/Images/projects3.png"
+import projectimg4 from "../../assets/Images/projects4.jpeg"
 import CommonModal from "../../custom/Modal/Modal";
 
 const Projects = () => {
@@ -43,6 +44,16 @@ const Projects = () => {
     },
     {
       id: 2,
+      img: projectimg4,
+      name: "Personal Expenses Tracking",
+      languages: "React, MongoDB, Spring Boot, Javascript",
+      company: "Personal Project",
+      discription:
+        "Developed a personal expense tracking system that allows users to record, edit, delete, and view daily expenses efficiently. The system includes a feature to set a monthly expense limit and displays warnings when the limit is reached, providing valuable assistance for managing day-to-day finances.",
+      githubUrl: "https://github.com/milanmalshika/PersonalExpenseTracking",
+    },
+    {
+      id: 3,
       img: projectimg2,
       name: "SmartRide",
       languages: "Flutter, PostgreSQL, Express, React, NodeJs",
@@ -52,7 +63,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Group-29-3rd-Year/",
     },
     {
-      id: 3,
+      id: 4,
       img: projectimg3,
       name: "IMSystem",
       languages: "HTML, CSS, PHP, Javascript",
@@ -86,7 +97,7 @@ const Projects = () => {
               <div className="project_cover">
                 <img src={project.img} alt={project.name} />
               </div>
-              <div className="project_header" style={{top: index % 3 === 0 ? '0px' : index % 3 === 1 ? '50px' : '50px', left: index % 3 === 0 ? 'unset' : index % 3 === 1 ? '-50px' : 'unset', right: index % 3 === 1 ? '' : '-50px'}}>
+              <div className="project_header" style={{top: index % 2 === 0 ? '0px' : index % 2 === 1 ? '50px' : '50px', left: index % 2 === 0 ? 'unset' : index % 2 === 1 ? '-50px' : 'unset', right: index % 2 === 1 ? '' : '-50px'}}>
                 <h3>{project.name}</h3>
                 <span>{project.company}</span>
               </div>
@@ -110,7 +121,7 @@ const Projects = () => {
           onCloseModal={(isOpen) => setIsModalOpen(isOpen)}
         >
           <h2>{details?.name}</h2>
-          <p>{details?.company}</p>
+          <h4>{details?.company}</h4>
           <p>{details?.languages}</p>
           <p>{details?.discription}</p>
           {details?.clients && (
