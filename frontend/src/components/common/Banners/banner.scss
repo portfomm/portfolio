@@ -141,3 +141,22 @@
         margin-right: 0 !important;
     }
 }
+
+
+@media (max-width: 900px) {
+    .item-name {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+        margin-bottom: 8px !important;
+    }
+
+    .item-icons {
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+
+}

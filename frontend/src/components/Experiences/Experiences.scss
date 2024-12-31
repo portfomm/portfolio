@@ -61,7 +61,7 @@
         padding: 12px;
         border-radius: 20px;
         border: none;
-        background-color: #b21eb29e;
+        background-color: #b21eb2e6;
         color: #ffffff;
         min-width: 120px;
         font-weight: 600;
@@ -114,5 +114,11 @@
     .project-item-left::after,
     .project-item-right::before {
         display: none !important;
+    }
+
+    .project_header {
+        position: unset !important;
+        margin: 4px 0;
+
     }
 }
