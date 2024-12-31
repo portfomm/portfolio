@@ -114,8 +114,8 @@ const Experiences = () => {
           <p>{details?.description ?? ''}</p>
           <p>{details?.technologies ?? ''}</p>
           <ul>
-            {details?.myResponsibilities?.map((item)=> (
-              <li>{item}</li>
+            {details?.myResponsibilities?.map((item, index)=> (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </CommonModal>}

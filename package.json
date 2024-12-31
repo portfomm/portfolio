@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "sass": "^1.83.0"
+    "sass": "^1.83.0",
+    "react-ga4": "^2.1.0"
   }
 }

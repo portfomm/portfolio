@@ -117,8 +117,8 @@ const Projects = () => {
             <>
               <p>Clients: </p>
               <ul className="list-items">
-                {details?.clients?.map((item) => (
-                  <li>
+                {details?.clients?.map((item, index) => (
+                  <li key={index}>
                     <a
                       href={item?.url}
                       target="_blank"
@@ -136,8 +136,8 @@ const Projects = () => {
             <>
               <p>We prepared: </p>
               <ul>
-                {details?.options?.map((item) => (
-                  <li>{item}</li>
+                {details?.options?.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </>

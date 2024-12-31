@@ -255,3 +255,11 @@
         background-image: none
     }
 }
+
+
+@media (max-width: 1200px) {
+    .name_wrapper {
+        align-items: center !important;
+        justify-content: center;
+    }
+}

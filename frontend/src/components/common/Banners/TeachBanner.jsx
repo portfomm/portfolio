@@ -93,14 +93,14 @@ const TeachBanner = () => {
         <h2>My Skills</h2>
       </div>
       <div className="banner-items-area">
-        {skillsTypes.map((items) => (
-          <div className="item-area">
+        {skillsTypes.map((items, index) => (
+          <div className="item-area" key={index}>
             <div className="item-name">{items}</div>
             <div className="item-icons">
               {frontEnd
                 .filter((item) => item.type === items)
-                .map((item) => (
-                  <div key={item.id} className="box-icon">
+                .map((item, index) => (
+                  <div key={item.id} className="box-icon" >
                     {item.img}
                   </div>
                 ))}
